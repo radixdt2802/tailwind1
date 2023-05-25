@@ -1,0 +1,18 @@
+.dark-mode {
+  background-color: rgb(12, 12, 23);
+}
+
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode p {
+  color: white;
+}
+
+.dark-mode .dark-mode\:bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128/var(--tw-bg-opacity));
+}
+
+body {
+  background-color: whitesmoke;
+}/*# sourceMappingURL=style.css.map */

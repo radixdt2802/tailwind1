@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindDemo</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.scss">
+    <!-- <script src="https://cdn.tailwindcss.com/3.0.23"></script> -->
+    <!-- <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+    } else {
+    document.documentElement.classList.remove('dark')
+    }
+    </script> -->
+</head>
+<body class="bg-zinc-50">
+    <div class="container items-center relative box-border px-2">
+    <div class="flex justify-between items-center pt-4 lg:pl-16 lg:pr-16">
+        <div class="hidden lg:flex">
+        </div>
+        <div class="hidden sm:hidden md:flex md:rounded-full md:shadow-lg md:border md:border-gray-100 md:border-solid md:px-3 md:font-medium"> 
+            <p class="text-primary-500 dark:text-primary-500"><a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 dark:text-primary-500 font-poppins" href="">About</a></p>
+            <p class="text-primary-500 dark:text-primary-500"><a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 dark:text-primary-500 font-poppins" href="">Articles</a></p>
+            <p class="text-primary-500 dark:text-primary-500"><a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 dark:text-primary-500 font-poppins" href="">Projects</a></p>
+            <p class="text-primary-500 dark:text-primary-500"><a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 dark:text-primary-500 font-poppins" href="">Speaking</a></p>
+            <p class="text-primary-500 dark:text-primary-500"><a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 dark:text-primary-500 font-poppins" href="">Uses</a></p>
+        </div>
+        <div class="lg:hidden">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="py-3 px-3 rounded-full shadow-lg border border-gray-100 border-solid text-right">
+            <a class="no-underline"><i class="fa fa-circle-half-stroke items-center"></i></a>
+        </div>
+    </div>
+    <div class="flex flex-col pt-8 px-8 pb-8 lg:pt-16 lg:pb-96">
+        <div class="lg:pl-16">
+            <img class="w-16 h-16" src="/images/placeholder.png" alt="">
+        </div>
+        <h1 class="text-title text-primary-500 max-w-xl lg:pl-16 dark font-poppins">Software designer, founder, and amateur astronaut.</h1>
+        <p class="text-paragraph leading-7 text-primary-800 max-w-xl my-0 lg:pl-16 dark:text-primary-100 font-poppins">I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.</p>
+        <div class="flex flex-row items-center  lg:pl-16 mt-6">
+            <a href=""><img class="pr-4 py-4" src="/images/facebook.svg" alt=""></a>
+            <a href=""><img class="px-4 py-4" src="/images/linkedin.svg" alt=""></a>
+            <a href=""><img class="px-4 py-4" src="/images/pinterest.svg" alt=""></a>
+            <a href=""><img class="px-4 py-4" src="/images/twitter.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="hidden xl:flex xl:flex-nowrap xl:gap-4 xl:absolute xl:start-1/4 xl:top-[600px] xl:-left-24">
+    <img class="rotate-2 w-72 h-80 rounded-xl" src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&w=384&q=75" alt="">
+    <img class="w-72 h-80 rounded-xl" src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&w=384&q=75" alt="">
+    <img class="w-72 h-80 rounded-xl" src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&w=384&q=75" alt="">
+    <img class="w-72 h-80 rounded-xl" src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&w=384&q=75" alt="">
+    <img class="w-72 h-80 rounded-xl" src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&w=384&q=75" alt="">
+    </div>
+
+    <section class="flex flex-col lg:flex-row sm:flex sm:px-4 sm:py-4 sm:w-full sm:justify-between">
+        <div class="flex flex-col sm:w-3/5	">
+        <div  class="flex flex-col !dark:hover:bg-slate-400 hover:bg-gray-100 dark:hover:bg-slate-500 duration-500 border border-gray-100 border-solid ease-in-out max-w-lg pl-8 lg:ml-16 pr-8  rounded-2xl py-6 mb-8">
+            <p class="text-paragraph text-primary-600 font-poppins">September 5, 2022</p>
+            <h3 class="text-2xl text-primary-500 font-poppins">Crafting a design system for a multiplanetary future</h3>
+            <p class="text-paragraph text-primary-800 font-poppins">Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.</p>
+            <div class="flex items-center gap-2">
+                <a class="no-underline flex items-center gap-2" href="">
+                <p class="text-paragraph text-primary-900 font-poppins">Read article</p>
+                <i class="fa fa-angle-right text-primary-900"></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col max-w-lg hover:bg-gray-100 duration-500 border border-gray-100 border-solid ease-in-out pl-8 lg:ml-16 pr-8 rounded-2xl py-6 mb-8">
+            <p class="text-paragraph text-primary-600 font-poppins">September 5, 2022</p>
+            <h3 class="text-2xl text-primary-500 font-poppins">Crafting a design system for a multiplanetary future</h3>
+            <p class="text-paragraph text-primary-800 font-poppins">Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.</p>
+            <div class="flex items-center gap-2">
+                <a class="no-underline flex items-center gap-2" href="">
+                <p class="text-paragraph text-primary-900 font-poppins">Read article</p>
+                <i class="fa fa-angle-right text-primary-900"></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col max-w-lg hover:bg-gray-100 dark:hover:bg-slate-400 duration-500 border border-gray-100 border-solid ease-in-out pl-8 lg:ml-16 pr-8 rounded-2xl py-6 mb-8">
+            <p class="text-paragraph text-primary-600 font-poppins">September 5, 2022</p>
+            <h3 class="text-2xl text-primary-500 font-poppins">Crafting a design system for a multiplanetary future</h3>
+            <p class="text-paragraph text-primary-800 font-poppins">Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.</p>
+            <div class="flex items-center gap-2">
+                <a class="no-underline flex items-center gap-2" href="">
+                <p class="text-paragraph text-primary-900 font-poppins">Read article</p>
+                <i class="fa fa-angle-right text-primary-900"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="lg:pr-8 lg:w-2/5 ">
+            <div class="flex flex-col w-full p-6 rounded-2xl box-border lg:max-w-xs border border-gray-100 border-solid px-6 py-6 lg:pr-8 ">
+                <div class="flex items-center gap-3">
+                    <i class="fa fa-message text-primary-600"></i>
+                    <h3 class="text-2xl text-primary-500 my-0 font-poppins">Stay up to date</h3>
+                </div>
+                <p class="text-paragraph text-primary-800 font-poppins">Get notified when I publish something new, and unsubscribe at any time.</p>
+                <div class="flex gap-2">
+                    <input class="rounded-lg py-2 px-3 shadow-lg border border-gray-100 border-solid font-poppins" type="text" id="mail" name="email" placeholder="Email">
+                    <a class="bg-black transition text-paragraph text-primary-100 py-2 px-3 rounded-xl no-underline font-poppins" href="">Join</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-6 rounded-2xl lg:max-w-xs border border-gray-100 border-solid px-6 py-6 lg:pr-8 mt-10">
+                <div class="flex items-center gap-3 pb-8">
+                    <i class="fa fa-briefcase text-primary-600"></i>
+                    <h3 class="text-2xl text-primary-500 my-0 font-poppins">Work</h3>
+                </div>
+                <div class="flex items-center pb-6">
+                    <div>
+                        <img class="w-10 h-10 pr-4" src="/images/placeholder.png"  alt="icon">
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-500 pb-2 font-poppins">Planetaria</p>
+                        <p class="my-0 text-paragraph text-primary-600 font-poppins">CEO</p>
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-600 pl-24 font-poppins">2019 - Present</p>
+                    </div>
+                </div>
+                <div class="flex items-center pb-6">
+                    <div>
+                        <img class="w-10 h-10 pr-4" src="/images/placeholder.png"  alt="icon">
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-500 pb-2 font-poppins">Airbnb</p>
+                        <p class="my-0 text-paragraph text-primary-600 font-poppins">Product Designer</p>
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-600 pl-16 font-poppins">2014 - 2019</p>
+                    </div>
+                </div>
+                <div class="flex items-center pb-6">
+                    <div>
+                        <img class="w-10 h-10 pr-4" src="/images/placeholder.png"  alt="icon">
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-500 pb-2 font-poppins">Facebook</p>
+                        <p class="my-0 text-paragraph text-primary-600 font-poppins">iOS Software Engineer</p>
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-600 pl-8 font-poppins">2011 - 2014</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div>
+                        <img class="w-10 h-10 pr-4" src="/images/placeholder.png"  alt="icon">
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-500 pb-2 font-poppins">Starbucks</p>
+                        <p class="my-0 text-paragraph text-primary-600 font-poppins">Shift Supervisor</p>
+                    </div>
+                    <div>
+                        <p class="my-0 text-paragraph text-primary-600 pl-20 font-poppins">2008 - 2011</p>
+                    </div>
+                </div>
+                <div class="py-2 px-3 bg-gray-100  rounded-lg mt-6">
+                    <a class="no-underline" href=""><p class="text-paragraph text-primary-500 dark-mode:text-primary-50 text-center my-0 font-poppins">Download CV</p></a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="flex flex-wrap justify-center mx-auto text-center lg:justify-between pt-10 sm:pb-16 sm:pl-28 lg:border lg:border-gray-100 lg:border-solid ">
+        <div class="flex">
+            <a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 font-poppins font-poppins" href="">About</a>
+            <a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 font-poppins" href="">Projects</a>
+            <a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 font-poppins" href="">Speaking</a>
+            <a class="px-3 py-3 transition hover:text-teal-500 no-underline text-paragraph text-primary-500 font-poppins" href="">Uses</a>
+        </div>
+        <div>
+            <p class="text-paragraph text-primary-600 sm:pr-28 font-poppins">2023 Spencer Sharp. All rights reserved.</p>
+        </div>
+    </section>
+    </div>
+    <!-- <script>
+        let theme = localStorage.getItem('theme');
+       const themeToggle = document.querySelector('.js-theme-toggle');
+        themeToggle.addEventListener('click', function() {
+            console.log("vlock")
+            document.querySelector("html").classList.toggle("dark");
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.remove('dark')
+                } else {
+                document.documentElement.classList.add('dark')
+                }
+        });
+    </script> -->
+</body>
+</html>
