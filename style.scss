@@ -1,0 +1,37 @@
+// $fonts: 'Poppins', sans-serif;
+// // $primary-color: #ab99ca;
+// $spacing: 2rem;
+// $para-fs: 1rem;
+// $color-black: #27272A; 
+// $color-gray: #52525B;
+
+
+// .text-paragraph{
+//     font-size: $para-fs;
+//     font-family: $fonts;
+// }
+// .black-color{
+//     color: $color-black;
+// }
+// .gray-color{
+//     color: $color-gray;
+// }
+
+.dark-mode {
+    background-color: rgb(12, 12, 23);
+}
+
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode .dark-mode\:bg-gray-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+body {
+    background-color: whitesmoke;
+}
